@@ -11,10 +11,10 @@
       :items-per-page="10"
       class="elevation-1"
     >
-      <template v-slot:item.name="{ item }">
+      <template v-slot:[`item.name`]="{ item }">
         <span @click="showModal(item.name)" class="name">{{ item.name }}</span>
       </template>
-      <template v-slot:item.keywords="{ item }">
+      <template v-slot:[`item.keywords`]="{ item }">
         <ul>
           <li :key="keyword" v-for="keyword in item.keywords">{{ keyword }}</li>
         </ul>
