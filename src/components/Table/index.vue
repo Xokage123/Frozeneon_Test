@@ -1,9 +1,11 @@
 <template>
   <div>
     <LoaderComponent v-if="isLoadPackages" />
-    <span v-else-if="packages.length === 0"
-      >Нет рузультатов. Введите название пакета, который хотите найти</span
-    >
+
+    <span v-else-if="packages.length === 0">
+      Нет рузультатов. Введите название пакета, который хотите найти
+    </span>
+
     <v-data-table
       v-else
       :headers="headers"
@@ -20,6 +22,7 @@
         </ul>
       </template>
     </v-data-table>
+
     <ModalComponent @close="hideModal" :showModal="isVisibleModal">
       <template v-slot:header> {{ getModaleHeader }}</template>
       <template v-slot:body>

@@ -4,6 +4,7 @@
       <FormComponent />
       <TableComponent />
     </MainLayout>
+
     <notifications group="packages" position="bottom right" />
   </v-app>
 </template>

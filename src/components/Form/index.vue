@@ -2,6 +2,7 @@
   <v-form @submit.prevent="getPakagesHandler">
     <v-row class="form__row" align="center">
       <v-text-field v-model="namePackage" label="Введите название пакета" />
+
       <v-btn :disabled="!namePackage" type="submit" color="primary">
         Искать
       </v-btn>
