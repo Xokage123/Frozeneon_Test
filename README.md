@@ -1,24 +1,21 @@
-# frozeon
+# Frozeneon project
 
 ## Project setup
 ```
-yarn install
+yarn install / npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn start / npm start
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
+yarn build / npm build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+yarn lint / npm lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
