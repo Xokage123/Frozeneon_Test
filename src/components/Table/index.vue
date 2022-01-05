@@ -51,7 +51,7 @@ import Vue from "vue";
 import LoaderComponent from "@/components/Loader/index.vue";
 import ModalComponent from "@/components/Modal/index.vue";
 
-import { headerTablePackages } from "@/const/index";
+import { headerTablePackages } from "./const";
 
 import { getDate } from "@/utils/index";
 import { getPackageProperties } from "./utils";
