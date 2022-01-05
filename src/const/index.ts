@@ -1,4 +1,5 @@
 import { NameHeaderTable } from "@/interfaces/interface/table";
+import { NameProperties } from "@/interfaces/interface/packages";
 
 export const BASE_URL_API = "https://registry.npmjs.org";
 export const URL_SEARCH = "/-/v1/search";
@@ -9,23 +10,23 @@ export const GITHUB_URL = "https://github.com/Xokage123?tab=repositories";
 
 export const headerTablePackages = [
   {
-    text: "Название пакета",
+    text: NameProperties.NAME,
     value: NameHeaderTable.NAME,
   },
   {
-    text: "Версия",
+    text: NameProperties.VERSION,
     value: NameHeaderTable.VERSION,
   },
   {
-    text: "Дата",
+    text: NameProperties.DATE,
     value: NameHeaderTable.DATE,
   },
   {
-    text: "Автор",
+    text: NameProperties.AUTHOR,
     value: NameHeaderTable.AUTHOR,
   },
   {
-    text: "Ключевые слова",
+    text: NameProperties.KEYWORDS,
     value: NameHeaderTable.KEYWORDS,
   },
 ];
