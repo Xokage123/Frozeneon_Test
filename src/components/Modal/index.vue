@@ -69,7 +69,7 @@ export default Vue.extend({
   &-container {
     width: 800px;
     max-height: 500px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     margin: 0px auto;
     padding: 20px 30px;

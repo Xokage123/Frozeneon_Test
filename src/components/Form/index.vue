@@ -1,12 +1,7 @@
 <template>
   <v-form @submit.prevent="getPakagesHandler">
-    <v-row align="center">
-      <v-col>
-        <v-text-field
-          v-model="namePackage"
-          label="Введите название пакета"
-        ></v-text-field>
-      </v-col>
+    <v-row class="form__row" align="center">
+      <v-text-field v-model="namePackage" label="Введите название пакета" />
       <v-btn :disabled="!namePackage" type="submit" color="primary">
         Искать
       </v-btn>
@@ -47,3 +42,12 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.form {
+  &__row {
+    display: flex;
+    gap: 20px;
+  }
+}
+</style>
