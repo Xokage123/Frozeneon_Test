@@ -29,7 +29,7 @@
             <a
               v-if="item.link && item.value"
               :href="item.value"
-              target="_blinck"
+              target="_blank"
               >{{ item.value }}</a
             >
             <ul v-else-if="Array.isArray(item.value)">
