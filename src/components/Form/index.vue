@@ -48,6 +48,7 @@ export default Vue.extend({
   &__row {
     display: flex;
     gap: 20px;
+    margin: 0;
   }
 }
 </style>
