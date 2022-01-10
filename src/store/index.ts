@@ -17,11 +17,6 @@ export default new Vuex.Store<InitialState>({
   state: initialState,
   mutations: {
     setModalPackage(state, payload) {
-      console.log(
-        state.packages.find(
-          (packageInformation) => packageInformation.package.name === payload
-        )
-      );
       state.modalPackage = state.packages.find(
         (packageInformation) => packageInformation.package.name === payload
       );
